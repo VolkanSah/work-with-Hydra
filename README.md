@@ -3,16 +3,26 @@
 
 ## Introduction
 Hydra is a powerful tool for performing brute-force attacks on various services. It supports a wide range of protocols and can be used to test the security of your systems by identifying weak passwords.
-
 ## Table of Contents
 - [Introduction](#introduction)
 - [Installation](#installation)
 - [Usage](#usage)
 - [Examples](#examples)
+  - [Example 1: SSH Brute Force](#example-1-ssh-brute-force)
+  - [Example 2: FTP Brute Force](#example-2-ftp-brute-force)
+  - [Example 3: Web Form Brute Force](#example-3-web-form-brute-force)
+  - [Example 4: SMTP Brute Force](#example-4-smtp-brute-force)
+  - [Example 5: MySQL Brute Force](#example-5-mysql-brute-force)
+  - [Example 6: RDP Brute Force](#example-6-rdp-brute-force)
+  - [Example 7: Telnet Brute Force](#example-7-telnet-brute-force)
+  - [Example 8: HTTP Basic Authentication Brute Force](#example-8-http-basic-authentication-brute-force)
+  - [Example 9: VNC Brute Force](#example-9-vnc-brute-force)
+  - [Example 10: SNMP Brute Force](#example-10-snmp-brute-force)
 - [Best Practices](#best-practices)
 - [Contributing](#contributing)
 - [Credits](#credits)
 - [License](#license)
+
 
 ## Installation
 To install Hydra, follow these steps:
@@ -86,6 +96,85 @@ form_parameters = "/login:username=^USER^&password=^PASS^:Invalid username or pa
 // Execute the brute force attack
 hydra -L username_list -P password_list target_url protocol form_parameters
 ```
+
+### Example 4: SMTP Brute Force
+```
+// Define the target IP and the protocol
+target_ip = "192.168.1.3"
+protocol = "smtp"
+
+// Define the username and password lists
+username_list = ["admin@example.com", "user@example.com"]
+password_list = ["admin123", "password"]
+
+// Execute the brute force attack
+hydra -L username_list -P password_list target_ip protocol
+```
+### Example 5: MySQL Brute Force
+```
+// Define the target IP and the protocol
+target_ip = "192.168.1.4"
+protocol = "mysql"
+
+// Define the username and password lists
+username_list = ["root", "admin"]
+password_list = ["rootpass", "adminpass"]
+
+// Execute the brute force attack
+hydra -L username_list -P password_list target_ip protocol
+```
+### Example 6: RDP Brute Force
+```
+// Define the target IP and the protocol
+target_ip = "192.168.1.5"
+protocol = "rdp"
+
+// Define the username and password lists
+username_list = ["Administrator", "User"]
+password_list = ["admin123", "password"]
+
+// Execute the brute force attack
+hydra -L username_list -P password_list target_ip protocol
+```
+### Example 7: Telnet Brute Force
+```
+// Define the target IP and the protocol
+target_ip = "192.168.1.6"
+protocol = "telnet"
+
+// Define the username and password lists
+username_list = ["root", "admin"]
+password_list = ["toor", "admin123"]
+
+// Execute the brute force attack
+hydra -L username_list -P password_list target_ip protocol
+```
+### Example 8: HTTP Basic Authentication Brute Force
+```
+// Define the target URL and the protocol
+target_url = "http://example.com/protected"
+protocol = "http-get"
+
+// Define the username and password lists
+username_list = ["admin", "user"]
+password_list = ["admin123", "password"]
+
+// Execute the brute force attack
+hydra -L username_list -P password_list target_url protocol
+```
+### Example 9: VNC Brute Force
+```
+// Define the target IP and the protocol
+target_ip = "192.168.1.7"
+protocol = "vnc"
+
+// Define the password list (VNC typically only uses a password)
+password_list = ["password", "vncpass"]
+
+// Execute the brute force attack
+hydra -P password_list target_ip protocol
+```
+
 
 ## Best Practices
 - Always ensure you have permission before performing any brute-force attacks.
