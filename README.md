@@ -96,7 +96,7 @@ hydra -L username_list -P password_list target_url protocol form_parameters
 Contributions are welcome! Please submit a pull request or open an issue to discuss your ideas.
 
 ## Credits
-Hydra is developed by van Hauser and other contributors. For a full list of contributors, see the `AUTHORS` file.
+Hydra is developed by van Hauser and other contributors. See [Link](https://github.com/vanhauser-thc/thc-hydra)
 
 ## License
 Hydra is licensed under the GPL-3.0 License. See the `LICENSE` file for more details.
