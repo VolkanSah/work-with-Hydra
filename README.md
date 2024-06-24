@@ -188,4 +188,4 @@ Contributions are welcome! Please submit a pull request or open an issue to disc
 Hydra is developed by van Hauser and other contributors. See [Link](https://github.com/vanhauser-thc/thc-hydra)
 
 ## License
-Hydra is licensed under the GPL-3.0 License. See the `LICENSE` file for more details.
+Hydra is licensed under the GNU AFFERO GENERAL PUBLIC LICENSE.
